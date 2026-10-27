@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#a9231b">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <title>原起点 · 登录与权限界面预览</title>
+  <link rel="icon" href="./company-logo.png" type="image/png">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./preview.css">
+</head>
+<body>
+  <section class="preview-toolbar" aria-label="界面预览导航">
+    <div class="preview-label"><strong>界面预览</strong><span>示例数据 · 不连接真实飞书 · 不保存申请</span></div>
+    <nav id="preview-navigation"><button data-preview="/login">登录</button><button data-preview="/register">注册申请</button><button data-preview="/pending">等待审核</button><button data-preview="/workspace">进入系统</button><button data-preview="/admin?tab=requests">权限管理</button><button data-preview="/admin?tab=users">账号授权</button><button data-preview="/admin?tab=templates">职位模板</button></nav>
+  </section>
+  <div id="app"></div>
+  <div id="toast-region" class="toast-region" aria-live="polite"></div>
+  <div id="modal-root"></div>
+  <script type="module" src="./portal-preview.js"></script>
+</body>
+</html>
